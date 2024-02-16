@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 * {
     padding: 0px;
@@ -70,10 +74,10 @@ h5,
 h6 {
     font-weight: inherit;
     font-size: inherit;
-    font-family: 'Cormorant', serif;
 }
 
-a,
-p {
-    font-family: 'Open Sans', sans-serif;
-}
+
+
+*::selection {
+    background: #44d62c;
+  }
