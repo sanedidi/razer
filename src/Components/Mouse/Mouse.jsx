@@ -1,5 +1,29 @@
 import React from "react";
 import "./Mouse.scss";
+import toast, { Toaster } from 'react-hot-toast';
+const notify = () => toast('Added to cart', {
+  duration: 1000,
+  position: 'bottom-right',
+
+  // Styling
+  style: {},
+  className: '',
+
+  // Custom Icon
+  icon: '👏',
+
+  // Change colors of success/error/loading icon
+  iconTheme: {
+    primary: '#000',
+    secondary: '#fff',
+  },
+
+  // Aria
+  ariaProps: {
+    role: 'status',
+    'aria-live': 'polite',
+  },
+});
 const Mouse = ({ mice }) => {
   return (
     <section className="catalog">
@@ -23,7 +47,8 @@ const Mouse = ({ mice }) => {
                   </div>
                   <div className="catalog__btm">
                     <p>US${el.price}</p>
-                    <button>BUY</button>
+                    <button onClick={notify}>BUY</button>
+                    <Toaster />
                   </div>
                 </div>
               </div>
