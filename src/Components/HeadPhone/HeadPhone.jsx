@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './HeadPhone.scss'
 const HeadPhone = ({headsets}) => {
   return (
     <section className="catalog">
